@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>Random Name Picker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="page-header text-center my-3">
+            <h1 class=" h1  text-uppercase  display-4 header-h1">Random Name Picker</h1>
+        </header>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="from-group mb-2">
+                    <label for="inp" class="mt-2">ADD NAMES/ENTRIES</label>
+                    <textarea name="" id="input" class="form-control textarea-autosize" rows="10"
+                        placeholder="Each name should be added separated by comma"></textarea>
+                    <strong>Or</strong>
+                </div>
+                <div class=" from-group card p-2 input-ready">
+
+                    <input type="file" accept="text/plain" class="form-control-file" name="" id="input-file">
+                    <button class="btn btn-primary text-uppercase font-weight-bold my-3" id="ready" type="button">
+                        Ready
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="" class="mt-2">OUTPUT DISPLAY</label>
+                <div class="card card-body text-center display">
+                    <h2 id="display">Display</h2>
+                </div>
+
+                <ul class="list-group-item my-3">
+                    <li class="list-group-item">
+                        <strong>
+                            First Winner: <span id="first-position"></span>
+                        </strong>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>
+                            Second Winner: <span id="second-position"></span>
+                        </strong>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>
+                            Third Winner: <span id="third-position"></span>
+                        </strong>
+                    </li>
+                </ul>
+                <div class="card p-1 d-block shuffle-area">
+                    <div class="form-group">
+                        <input type="checkbox" class="form-check-input c9" name="" id="checkbox">
+                        <label for="checkbox" class="form-check-label" id="checkbox-label">Remove name after a
+                            Draw</label>
+                        <button class="btn btn-primary reset text-uppercase mb-2" id="reset">Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success text-uppercase font-weight-bold my-2"
+                            id="shuffle">Shuffle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
