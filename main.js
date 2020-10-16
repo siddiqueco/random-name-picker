@@ -17,7 +17,6 @@ ready.addEventListener('click', function (event) {
         Swal.fire('Oops...', 'Name List is empty!', 'info')
     } else {
         let contestantName = input.value.split(/[\n,]+/).map(arr => arr.trim())
-        contestantName.pop()
         participantNames = [...contestantName]
         input.value = participantNames.join('\n')
 
