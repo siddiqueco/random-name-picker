@@ -6,5 +6,3 @@ Simple app on vanila JavaScript that will pick a random name from a list of give
 2. Can remove a name after a draw complete.
 3. You can Select Three winners from the list of name.
 4. After select a name you have to reset of refresh the page for new raffle
-
-**[Live Demo](https://siddique000.github.io/random-name-picker/)**
